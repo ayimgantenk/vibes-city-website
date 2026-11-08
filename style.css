@@ -126,23 +126,59 @@ footer {
     .hero h1 {
         font-size: 32px;
     }
-#server {
-    background: #0d0d0d;
-    border-top: 1px solid #e50914;
-    border-bottom: 1px solid #e50914;
+.server-ip {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-top: 30px;
+    flex-wrap: wrap;
 }
 
 .server-ip span {
-    letter-spacing: 2px;
+    background: #111;
+    border: 2px solid #e50914;
+    padding: 16px 28px;
+    border-radius: 10px;
+    font-size: 20px;
     font-weight: bold;
-    box-shadow: 0 0 12px rgba(229, 9, 20, 0.4);
+    letter-spacing: 2px;
+    color: white;
+    box-shadow: 0 0 15px rgba(229, 9, 20, 0.3);
 }
 
 .server-ip button {
+    background: #e50914;
+    color: white;
+    border: 2px solid #e50914;
+    padding: 16px 28px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
     transition: 0.3s;
 }
 
 .server-ip button:hover {
-    transform: scale(1.08);
-    box-shadow: 0 0 15px red;
+    background: white;
+    color: #e50914;
+    transform: translateY(-3px);
+}#crew {
+    background: #080808;
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.crew-image {
+    max-width: 450px;
+    margin: 30px auto 0;
+}
+}
+
+.crew-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+    border: 2px solid #e50914;
+    box-shadow: 0 0 20px rgba(229, 9, 20, 0.4);
 }
