@@ -181,4 +181,299 @@ footer {
     border-radius: 12px;
     border: 2px solid #e50914;
     box-shadow: 0 0 20px rgba(229, 9, 20, 0.4);
+}/* SERVER STATUS */
+
+#status {
+    background: #0b0b0b;
+}
+
+.status-card {
+    max-width: 500px;
+    margin: 30px auto 0;
+    padding: 30px;
+    background: #151515;
+    border: 1px solid #e50914;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(229, 9, 20, 0.2);
+}
+
+.status-online {
+    color: #00ff66;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.status-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #00ff66;
+    border-radius: 50%;
+    margin-right: 8px;
+    box-shadow: 0 0 10px #00ff66;
+}
+
+.status-info {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.status-info h3 {
+    font-size: 35px;
+    color: white;
+}
+
+.status-info p {
+    font-size: 12px;
+    color: #aaa;
+}
+
+.status-ip {
+    margin-top: 25px;
+    color: #ff2525;
+    font-weight: bold;
+    letter-spacing: 1px;
+}/* LEADERBOARD */
+
+#leaderboard {
+    background: #080808;
+}
+
+.leaderboard-card {
+    max-width: 650px;
+    margin: 30px auto 0;
+    background: #151515;
+    border: 1px solid #e50914;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(229, 9, 20, 0.2);
+}
+
+.player-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 18px 10px;
+    border-bottom: 1px solid #333;
+}
+
+.player-row:last-child {
+    border-bottom: none;
+}
+
+.player-row span {
+    color: #ff2525;
+    font-weight: bold;
+}
+
+.player-row strong {
+    color: white;
+    flex: 1;
+    text-align: left;
+}
+
+.player-row b {
+    color: #ff2525;
+}
+
+@media (max-width: 600px) {
+    .player-row {
+        font-size: 13px;
+        gap: 8px;
+    }
+}/* LOGIN / REGISTER DESIGN */
+
+#login {
+    background: #080808;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.login-container h2 {
+    color: #e50914;
+    font-size: 35px;
+    letter-spacing: 4px;
+}
+
+.login-container > p {
+    color: #aaa;
+    margin: 10px 0 35px;
+    letter-spacing: 2px;
+}
+
+.login-box {
+    max-width: 420px;
+    margin: auto;
+    padding: 40px 30px;
+    background: #151515;
+    border: 1px solid #e50914;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(229, 9, 20, 0.2);
+}
+
+.login-box h3 {
+    color: white;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.login-box p {
+    color: #999;
+    margin-bottom: 25px;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 18px;
+    background: #080808;
+    border: 1px solid #444;
+    border-radius: 6px;
+    color: white;
+    outline: none;
+}
+
+.login-box input:focus {
+    border-color: #e50914;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 14px;
+    background: #e50914;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login-box button:hover {
+    background: #b8000b;
+}
+
+.register-text {
+    color: #aaa;
+    margin-top: 22px;
+    font-size: 14px;
+}
+
+.register-text a {
+    color: #e50914;
+    text-decoration: none;
+    font-weight: bold;
+}/* VIBES CITY RP GUIDEBOOK */
+
+#guidebook {
+    background: #080808;
+    padding: 80px 8%;
+    text-align: center;
+}
+
+#guidebook h2 {
+    color: #e50914;
+    font-size: 32px;
+    letter-spacing: 3px;
+}
+
+#guidebook > p {
+    color: #aaa;
+    margin: 12px 0 35px;
+    letter-spacing: 2px;
+}
+
+.guidebook-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.guide-card {
+    background: #151515;
+    border: 1px solid #333;
+    border-left: 4px solid #e50914;
+    border-radius: 10px;
+    padding: 25px;
+    text-align: left;
+    transition: 0.3s;
+}
+
+.guide-card:hover {
+    border-color: #e50914;
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(229, 9, 20, 0.2);
+}
+
+.guide-card span {
+    color: #e50914;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.guide-card h3 {
+    color: white;
+    font-size: 17px;
+    margin: 15px 0;
+}
+
+.guide-card p {
+    color: #aaa;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+@media (max-width: 800px) {
+    .guidebook-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .guidebook-container {
+        grid-template-columns: 1fr;
+    }
+}/* GUIDEBOOK SEARCH & FILTER */
+
+.guidebook-controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    max-width: 700px;
+    margin: 0 auto 35px;
+}
+
+.guidebook-controls input,
+.guidebook-controls select {
+    background: #151515;
+    color: white;
+    border: 1px solid #e50914;
+    border-radius: 8px;
+    padding: 14px;
+    font-size: 14px;
+    outline: none;
+}
+
+.guidebook-controls input {
+    flex: 1;
+    min-width: 0;
+}
+
+.guidebook-controls select {
+    cursor: pointer;
+}
+
+.guidebook-controls input:focus,
+.guidebook-controls select:focus {
+    box-shadow: 0 0 10px rgba(229, 9, 20, 0.4);
+}
+
+@media (max-width: 500px) {
+    .guidebook-controls {
+        flex-direction: column;
+    }
 }
