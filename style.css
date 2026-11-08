@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #080808;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: #111;
+    border-bottom: 2px solid #e50914;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.logo img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ff2525;
+}
+
+.hero {
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+   background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.65)), url("background.png") center/cover no-repeat;
+
+.hero h1 {
+    font-size: 60px;
+    color: #ff2525;
+    margin-bottom: 20px;
+    text-shadow: 0 0 15px red, 0 0 30px #e50914;
+    letter-spacing: 3px;
+}
+}
+
+.hero h2 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background: #e50914;
+    color: white;
+    padding: 15px 35px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: white;
+    color: #e50914;
+}
+
+section:not(.hero) {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+section h2 {
+    color: #ff2525;
+    margin-bottom: 20px;
+}
+
+section p {
+    color: #ccc;
+    line-height: 1.8;
+}
+
+footer {
+    padding: 25px;
+    text-align: center;
+    background: #111;
+    color: #999;
+    border-top: 1px solid #e50914;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    nav a {
+        margin: 0 8px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+#server {
+    background: #0d0d0d;
+    border-top: 1px solid #e50914;
+    border-bottom: 1px solid #e50914;
+}
+
+.server-ip span {
+    letter-spacing: 2px;
+    font-weight: bold;
+    box-shadow: 0 0 12px rgba(229, 9, 20, 0.4);
+}
+
+.server-ip button {
+    transition: 0.3s;
+}
+
+.server-ip button:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 15px red;
+}
